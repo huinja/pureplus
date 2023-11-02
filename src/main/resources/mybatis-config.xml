@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+<configuration>
+<settings>
+
+        <setting name="jdbcTypeForNull" value="NULL"/>
+
+    </settings>
+<typeAliases><!-- 이 파일의 역할은 빈 클래스 객체 별칭이름을 관리 -->
+ 	<typeAlias type="com.pureplus.vo.RegisterVO" alias="register" />
+ 	<typeAlias type="com.pureplus.vo.AdminVO" alias="admin"/>
+ 	<typeAlias type="com.pureplus.vo.PageVO" alias="page"/>
+ 	<typeAlias type="com.pureplus.vo.GongjiVO" alias="gongji"/>
+ 	<typeAlias type="com.pureplus.vo.OrderVO" alias="order"/>
+</typeAliases>
+</configuration>

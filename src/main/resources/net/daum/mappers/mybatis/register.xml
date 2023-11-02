@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="register"> <!-- 매퍼 네임스페이스명을 Pure로 지정 --> 
+
+
+  <insert id="r_in">
+    insert into register(id,password,name,phonenum,mail,r_state,regdate) values(#{id},#{password},#{name},#{phonenum},#{mail},1,sysdate)
+  </insert>
+  <insert id="r_up">
+  	update register set password=#{password} phonenum=#{phonenum} mail=#{mail} where mem_id=#{mem_id}
+  </insert> 
+  
+  <select id="m_loginCheck" resultType="register">
+    select * from register where id=#{id} and r_state=1
+  </select>
+  <select id="m_idcheck" resultType="register">
+    select * from register where id=#{id}
+  </select>
+  
+  <!-- 회원탈퇴 -->
+  <update id="mDel_ok">
+    update register set r_state=2
+    where id=#{id}
+  </update>
+  
+  
+  
+  
+</mapper>

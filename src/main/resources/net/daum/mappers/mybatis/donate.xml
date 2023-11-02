@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="donate"> <!-- 매퍼 네임스페이스명을 donate 으로 지정 --> 
+
+    <select id="do_list" parameterType="page" resultType="order">
+     select * from (select rowNum rNum,id,buyer_name,buyer_email,
+     total_price from 
+     (select * from donate_order
+       <where>
+        <if test="find_field == ''"></if>
+        <if test="find_field == 'id'">
+         id like #{find_name}
+        </if>
+       </where>
+     order by id asc))
+     where rNum &gt;= #{startrow} and rNum &lt;= #{endrow}  
+    </select>
+    
+</mapper>

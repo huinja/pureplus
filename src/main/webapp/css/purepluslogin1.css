@@ -1,0 +1,167 @@
+@charset "UTF-8";
+body#LoginForm{ background-image:url("httjpg"); background-repeat:no-repeat; background-position:center; background-size:cover; padding:0px; margin:0px; }
+
+.form-heading { color:#379bff; font-size:23px;}
+.panel h2{ color:#777777; font-size:18px; margin:0 0 8px 0;}
+.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
+
+.login-form .form-control {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+}
+.main-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 2px;
+  margin: 10px auto 30px;
+  max-width: 38%;
+  padding: 70px 70px 0px 71px;
+}
+
+.login-form .form-group {
+
+  margin-bottom:10px;
+  
+}
+h1.form-heading{
+	font-size: 30px;
+	color:#0080ff;
+}
+#LoginForm{
+	
+	text-align:center;
+	 margin-bottom:150px;
+}
+p.botto-text{
+	
+	margin: 100px 40px 70px 40px;
+}
+.login-form{ text-align:center;}
+.forgot a {
+  color: #777777;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.login-form  .btn.btn-primary {
+  background: #f0ad4e none repeat scroll 0 0;
+  border-color: #f0ad4e;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+}
+.login-form .btn.btn-p{
+	  margin-bottom:10px;
+	background: #11d99d none repeat scroll 0 0;
+  border-color: #11d99d;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  text-align:center;
+}
+.login-form .btn.btn-pr{
+	 margin-bottom:10px;
+	background: #ea4335 none repeat scroll 0 0;
+ border-color: #ea4335;
+ font-size:0px; padding:10px 10px 10px 10px;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  text-align:center;
+}
+.forgot {
+  text-align: left; margin-bottom:30px;
+}
+.botto-text {
+  color: #ffffff;
+  font-size: 14px;
+  margin: auto;
+}
+div .container{
+
+}
+footer{
+   margin:288px 0px 0px 0px; height:50px;
+   background-image:url(../images/under_logo.gif);
+   background-repeat: no-repeat;
+   background-position: 40px center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.login-or {
+position: relative;
+color:#62b0ff;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.span-or {
+display: block;
+position: absolute;
+left: 50%;
+top: -2px;
+margin-left: -25px;
+background-color: #fff;
+width: 50px;
+text-align: center;
+}
+.hr-or {
+height: 1px;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+}
+h1.form-heading{
+	font-size: 31px;
+line-height: 40px;
+font-weight: 600;
+}
+h1.form-heading:hover{
+	color:#0067ce;
+}
+footer hr{
+   width:900px;
+}
+
+footer span{
+	margin:5px;
+	color:black;
+	font: small-caps bold italic 14px sans-serif;
+	padding-bottom:0px;
+	border-left:0px;
+	text-align:left ;
+	float: left;
+}
+footer span:hover{
+	color:black;
+}
+#copy{
+   width:450px; float:left;/*왼쪽에 배치*/
+   margin:20px 0px 0px 190px;
+}
+#social img{
+	
+	float:right;
+	
+   margin:0px 5px 0px 0px; /*상하 바깥 여백은 0픽셀, 좌우 바깥여백을 7픽셀로 처리*/
+}
+.login-form .btn.btn-primary.reset {
+  background: #ff9900 none repeat scroll 0 0;
+}
+.back { text-align: left; margin-top:10px;}
+.back a {color: #444444; font-size: 13px;text-decoration: none;}
